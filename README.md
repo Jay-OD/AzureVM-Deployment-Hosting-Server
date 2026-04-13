@@ -45,6 +45,8 @@ Key steps included:
 - Installing and launching the dedicated server binaries
 - Managing runtime processes through Command Prompt
 
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/a1cb9a47-9191-461b-8e8e-7032d6f30013" />
+
 ---
 
 ## Networking Configuration
@@ -116,23 +118,29 @@ Access was configured using Microsoft Entra ID.
 
 This demonstrates the use of least-privilege access principles in a real-world scenario.
 
+<img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/1bae7246-7bee-4a59-b1fe-c76d0b393488" />
+
 ---
 
 ## Remote Management
 
-The Azure mobile application was configured on multiple devices to allow:
+The Azure mobile application was configured on multiple mobile devices to allow:
 
 - Starting and stopping the virtual machine
 - Monitoring VM status remotely
 
-This improved accessibility and usability, particularly for users without direct desktop access.
+This improved accessibility and usability, particularly for users without direct desktop access and limited technical abilty.
 
 ---
 
 ## Automation
 
 ### Auto Shutdown
-An automatic shutdown schedule was configured for 3:00 AM daily to reduce unnecessary compute costs.
+An automatic shutdown schedule was configured for 3:00 AM daily to reduce unnecessary compute costs. This allows us to only be charged for our usage saving over 70% of potential costs.
+
+<img width="550" height="250" alt="image" src="https://github.com/user-attachments/assets/450baa28-3ab4-47a9-8f92-76e5eab848d0" />
+
+<img width="300" height="400" alt="image" src="https://github.com/user-attachments/assets/d0df6648-6675-415d-8480-40ba89810305" />
 
 ### Server Startup Automation
 NSSM (Non-Sucking Service Manager) was used to configure the server as a Windows service:
@@ -145,7 +153,7 @@ NSSM (Non-Sucking Service Manager) was used to configure the server as a Windows
 
 ## Cost Management
 
-A monthly budget of £50 was configured using Azure Cost Management.
+A monthly budget of $50 was configured using Azure Cost Management.
 
 Alert thresholds were set at:
 - 50%
@@ -156,6 +164,8 @@ Alert thresholds were set at:
 Email notifications are triggered when thresholds are reached.
 
 This ensures visibility and control over cloud spending.
+
+<img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/14361af5-e334-4c69-a962-19d222a7d703" />
 
 ---
 
