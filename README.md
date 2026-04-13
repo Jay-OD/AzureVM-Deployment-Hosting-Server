@@ -8,8 +8,6 @@ The initial goal was to host a game server after encountering platform limitatio
 
 This repository is intended as a portfolio project demonstrating practical, hands-on experience with Azure in a real-world scenario.
 
----
-
 ## Objectives
 
 - Deploy a publicly accessible dedicated server using Azure Virtual Machines
@@ -18,8 +16,6 @@ This repository is intended as a portfolio project demonstrating practical, hand
 - Implement automation for server lifecycle management
 - Monitor and control cloud spending
 - Troubleshoot and resolve real-world infrastructure issues
-
----
 
 ## Architecture
 
@@ -33,8 +29,6 @@ The solution consists of the following components:
 - Azure Mobile App for remote control
 - Microsoft Entra ID for identity and access management
 
----
-
 ## Virtual Machine Deployment
 
 A Windows-based Azure Virtual Machine was provisioned to meet the requirements of hosting a Palworld dedicated server.
@@ -46,8 +40,6 @@ Key steps included:
 - Managing runtime processes through Command Prompt
 
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/a1cb9a47-9191-461b-8e8e-7032d6f30013" />
-
----
 
 ## Networking Configuration
 
@@ -65,8 +57,6 @@ Matching inbound rules were configured within the VM to ensure traffic was not b
 Key learning:
 Both the Azure NSG and the VM firewall must be configured correctly. Allowing traffic in only one layer is insufficient.
 
----
-
 ## Troubleshooting and Issue Resolution
 
 A significant portion of the project involved diagnosing and resolving connectivity and server visibility issues.
@@ -78,8 +68,6 @@ Root cause:
 Resolution:
 - Verified NSG and firewall rules
 - Ensured correct port configuration in server settings
-
----
 
 ### Issue: Port binding errors
 CreateBoundSocket: couldn't find an open port between 27015 and 27015
@@ -93,8 +81,6 @@ Resolution:
 - Terminated conflicting processes using `taskkill`
 - Ensured only a single server instance was running
 
----
-
 ### Issue: Conflicting or incorrect configuration guidance
 During troubleshooting, incorrect port suggestions and configuration changes were introduced.
 
@@ -105,8 +91,6 @@ Resolution:
 
 Key takeaway:
 Troubleshooting requires validation and controlled testing rather than applying multiple changes at once.
-
----
 
 ## Identity and Access Management
 
@@ -120,8 +104,6 @@ This demonstrates the use of least-privilege access principles in a real-world s
 
 <img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/1bae7246-7bee-4a59-b1fe-c76d0b393488" />
 
----
-
 ## Remote Management
 
 The Azure mobile application was configured on multiple mobile devices to allow:
@@ -130,8 +112,6 @@ The Azure mobile application was configured on multiple mobile devices to allow:
 - Monitoring VM status remotely
 
 This improved accessibility and usability, particularly for users without direct desktop access and limited technical abilty.
-
----
 
 ## Automation
 
@@ -149,8 +129,6 @@ NSSM (Non-Sucking Service Manager) was used to configure the server as a Windows
 - Removes the need for manual command execution
 - Improves reliability and usability
 
----
-
 ## Cost Management
 
 A monthly budget of $50 was configured using Azure Cost Management.
@@ -165,9 +143,7 @@ Email notifications are triggered when thresholds are reached.
 
 This ensures visibility and control over cloud spending.
 
-<img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/14361af5-e334-4c69-a962-19d222a7d703" />
-
----
+<img width="450" height="200" alt="image" src="https://github.com/user-attachments/assets/14361af5-e334-4c69-a962-19d222a7d703" />
 
 ## Skills Demonstrated
 
@@ -179,8 +155,6 @@ This ensures visibility and control over cloud spending.
 - Automation using system services (NSSM)
 - Cost monitoring and budget enforcement
 
----
-
 ## Key Learnings
 
 - Cloud networking requires understanding multiple layers of access control
@@ -189,8 +163,6 @@ This ensures visibility and control over cloud spending.
 - Cloud cost management is a critical operational responsibility
 - Practical projects provide deeper learning than theoretical study alone
 
----
-
 ## Future Improvements
 
 - Infrastructure as Code (IaC) using Bicep or Terraform
@@ -198,8 +170,6 @@ This ensures visibility and control over cloud spending.
 - Integration with Azure Monitor and Log Analytics
 - Backup and restore strategy for server data
 - Multi-region deployment for improved latency and availability
-
----
 
 ## Conclusion
 
